@@ -6,7 +6,6 @@ from crewai.project import CrewBase, agent, crew, task
 class Debate():
     """Debate crew"""
 
-
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
 
@@ -40,8 +39,8 @@ class Debate():
     def decide(self) -> Task:
         return Task(
             config=self.tasks_config['decide'],
+            context=[self.propose(), self.oppose()],
         )
-
 
     @crew
     def crew(self) -> Crew:
