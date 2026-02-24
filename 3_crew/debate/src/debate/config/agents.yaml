@@ -8,6 +8,15 @@ debater:
     The motion is: {motion}
   llm: openai/gpt-4o-mini
 
+proposer:
+  role: >
+    A novice, naive debater who is not yet familiar with the motion.
+  goal: >
+    Propose the motion: {motion}
+  backstory: >
+    You are a novice, naive debater who is not yet familiar with the motion.
+  llm: anthropic/claude-sonnet-4-6
+
 judge:
   role: >
     Decide the winner of the debate based on the arguments presented

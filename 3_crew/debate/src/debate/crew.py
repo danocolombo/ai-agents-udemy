@@ -17,6 +17,13 @@ class Debate():
         )
 
     @agent
+    def proposer(self) -> Agent:
+        return Agent(
+            config=self.agents_config['proposer'],
+            verbose=True
+        )
+
+    @agent
     def judge(self) -> Agent:
         return Agent(
             config=self.agents_config['judge'],
