@@ -11,8 +11,8 @@ def run():
     Run the research crew.
     """
     inputs = {
-        'topic': 'open brain',
-        'summary': 'an open source project to retain ai prompts and data in a postgres database that can be used as a knowledge base for ai agents. The project stores vectorized data in a postgres database and uses a python api to query the database. This improves agents research because all the information and history in one agent is not in a silo from another agent. This can be used in cursor, vscode, and other ai agents that can use the api to query the database. There seems to be a project guide but seems only available for subscribers, but there may be free open source lists available.',
+        'topic': 'Portable AI Memory',
+        'summary': 'A lot of today’s AI tools and agents lack durable, portable “memory,” forcing you to re-explain your projects, constraints, decisions, and context every time you switch chats or platforms. The transcript argues that this memory gap—not model quality—is becoming the real bottleneck to effective prompting, context engineering, and agent usefulness, and that vendor-specific memory features create lock-in while remaining siloed across tools (Claude, ChatGPT, Cursor, etc.). As a solution, it proposes an “Open Brain”: a personal, database-backed knowledge system you own, built on a boring/reliable PostgreSQL store plus vector embeddings (semantic search) and exposed through MCP so any compatible AI client or agent can both write memories (capture) and read them (retrieve). With fast capture from tools like Slack and universal retrieval via MCP, the system enables consistent cross-tool context, supports compounding productivity over time, and remains future-proof and low-cost compared to proprietary SaaS memory layers.',
         'contacts': 'nate b. jones',
         'research_url': 'https://github.com/natebjj/open_brain',
         'related_projects': 'https://github.com/natebjj/open_brain_agent',

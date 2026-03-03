@@ -1,7 +1,7 @@
 # src/research_crew/config/tasks.yaml
 research_task:
   description: >
-    Conduct thorough research for the {topic}. Focus on:
+    Conduct thorough research for the {topic}. Utilizing the {summary} and {contacts} as a guide, Focus on:
     1. Current topic status and health
     2. Main contributors
     3. Alternative solutions
@@ -17,16 +17,22 @@ research_task:
 
 analysis_task:
   description: >
-    Analyze the research findings and create a comprehensive report on {topic}.
-    Your report should:
-    1. Begin with an executive summary
-    2. Include all key information from the research
-    3. Provide insightful analysis of trends and patterns
+    You MUST use the research findings provided to you in context as your primary
+    source. Do not rely on general knowledge; base your report strictly on the
+    research document produced by the researcher.
+
+    Analyze that research and create a comprehensive report on {topic}. Your report should:
+    1. Begin with an executive summary drawn from the research
+    2. Include all key information from the research (facts, figures, alternatives, risks)
+    3. Provide insightful analysis of trends and patterns found in the research
     4. Be formatted in a professional, easy-to-read style with clear headings
+
+    If the research is missing a requested area, say so; do not invent content.
   expected_output: >
     A polished, professional report on {topic} that presents the research
-    findings with added analysis and insights. The report should be well-structured
-    with an executive summary, main sections, and conclusion.
+    findings with added analysis and insights. The report must be grounded in
+    the research provided and well-structured with an executive summary,
+    main sections, and conclusion.
   agent: analyst
   context:
     - research_task
